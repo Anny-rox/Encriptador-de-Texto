@@ -1,0 +1,130 @@
+:root {
+  --color-primaria: #f3f5fc;
+  --color-secundaria: #0a3871;
+  --color-terciaria: #d8dfe8;
+  --color-hover: #ffffff;
+
+  --fuente-krona: "Krona One", sans-serif;
+  --fuente-montserrat: "Montserrat", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-primaria);
+  color: var(--color-secundaria);
+  font-size: 16px;
+}
+.container {
+  padding: 2% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  text-align: center;
+  padding: 0.5% 0 0 0;
+}
+.container-encriptador {
+  width: 60%;
+  padding: 2% 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+textarea {
+  width: 100%;
+  height: 45vh;
+  min-height: 100px;
+  max-height: 50vh;
+  padding: 5px;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  background-color: var(--color-primaria);
+  padding: 5%;
+  border-radius: 30px;
+}
+.advertencia {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  font-size: 1.05rem;
+}
+.advertencia img {
+  width: 4%;
+}
+.container-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.container-button button {
+  width: 50%;
+  padding: 2% 5%;
+  border-radius: 30px;
+  font-size: 1.02rem;
+}
+button:hover {
+  background-color: var(--color-hover);
+}
+
+#encriptar {
+  background-color: var(--color-secundaria);
+  color: var(--color-primaria);
+}
+#desencriptar {
+  background-color: var(--color-terciaria);
+}
+.container-resultados {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #0a3871;
+  border-radius: 30px;
+  padding: 3% 0;
+}
+h2 {
+  color: var(--color-terciaria);
+  font-size: 0.9rem;
+}
+#resultado {
+  width: 90%;
+  height: 40vh;
+  background-color: #f3f5fc;
+  min-height: 100px;
+  max-height: 45vh;
+  padding: 2%;
+}
+#copiar {
+  width: 50%;
+  padding: 2% 5%;
+  border-radius: 30px;
+  font-size: 1.02rem;
+}
+button:hover {
+  background-color: var(--color-hover);
+}
+footer {
+  background-color: var(--color-secundaria);
+  color: var(--color-primaria);
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+footer span {
+  color: var(--color-terciaria);
+}

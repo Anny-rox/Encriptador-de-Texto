@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de Texto</title>
+  <link rel="stylesheet" href="stilo.css">
+</head>
+
+<body>
+
+  <h1 class="titulo">Encriptador de Texto</h1>
+  <div class="container">
+    <div class="container-encriptador">
+      <textarea id="texto_original" placeholder="Ingresa tu texto aqui..."></textarea>
+      <div class="advertencia">
+        <img src="./img/icon.png" alt="icono de advertencia">
+        <p>Solo letras minúsculas, sin acento</p>
+      </div>
+      <div class="container-button">
+        <button id="encriptar" onclick="encriptar();">Encriptar</button>
+        <button id="desencriptar" onclick="desencriptar();">Desencriptar</button>
+      </div>
+    </div>
+
+    <div class="container-resultados">
+      <h2 id="">Mensaje encriptado:</h2>
+      <p id="resultado"></p>
+      <button id="copiar">Copiar</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; <span id="year">2024</span> Ana Roxana Marca Guzman</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
